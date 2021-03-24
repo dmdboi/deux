@@ -1,0 +1,8 @@
+{
+    "item" :{
+        "name" : "diamond-express",
+        "author" : "@dmdboi",
+        "version" : "1.0.0",
+        "description" : "A Basic Express API featuring user authentication via JSON web tokens."
+    }
+}
