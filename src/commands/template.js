@@ -1,4 +1,4 @@
-const {Command, flags} = require('@oclif/command')
+const { Command } = require('@oclif/command')
 const fs = require("fs");
 const clone = require("git-clone")
 const logSymbols = require('log-symbols');

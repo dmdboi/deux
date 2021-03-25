@@ -1,0 +1,39 @@
+const <%- nameCap %> = require("../models/<%- nameCap %>");
+
+const <%- name %>Service = {
+
+  create: async function (body) {
+    let document = new <%- nameCap %>();
+
+    // document.username = body.username;
+
+    await document.save();
+
+    return document;
+  },
+
+  find: async function (query) {
+    let document = await <%- nameCap %>.findOne(query);
+    return document;
+  },
+
+  findAll: async function (query) {
+    let documents = await <%- nameCap %>.find(query);
+
+    return documents;
+  },
+
+  update: async function (query, body) {
+    let document = await <%- nameCap %>.findOneAndUpdate(query, { $set: body });
+
+    return document;
+  },
+
+  delete: async function (query) {
+    let document = await <%- nameCap %>.deleteOne(query);
+
+    return document;
+  },
+};
+
+module.exports = <%- name %>Service;

@@ -1,0 +1,15 @@
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
+
+const <%- name %>Schema = new Schema(
+  {
+    // Define properties here, i.e
+    // username: { type: String, unique: true },
+
+  },
+  {
+    timestamps: true,
+  }
+);
+
+module.exports = mongoose.model("<%- nameCap %>", <%- name %>Schema);

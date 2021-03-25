@@ -1,0 +1,23 @@
+const <%- name %>Service =  require("../services/<%- name %>")
+
+// Find one document matching the query
+exports.find = async (req, res, next) => {
+
+  let query = { }
+
+  let <%- name %> = await <%- name %>Service.find(query)
+
+  return res.status(200).json({ <%- name %> })
+};
+
+// Find all documents matching the query
+exports.findAll = async (req, res, next) => {
+
+  let query = { }
+
+  let <%- name %> = await <%- name %>Service.findAll(query)
+
+  return res.status(200).json({ <%- name %> })
+};
+
+
