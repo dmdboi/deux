@@ -19,7 +19,7 @@ $ npm install -g express-deux
 $ deux COMMAND
 running command...
 $ deux (-v|--version|version)
-express-deux/1.3.1 win32-x64 node-v14.16.0
+express-deux/1.5.0 win32-x64 node-v14.16.0
 $ deux --help [COMMAND]
 USAGE
   $ deux COMMAND
@@ -34,6 +34,7 @@ USAGE
 * [`deux routes NAME`](#deux-routes-name)
 * [`deux service NAME`](#deux-service-name)
 * [`deux template NAME DIR`](#deux-template-name-dir)
+* [`deux uuid`](#deux-uuid)
 
 ## `deux controller NAME`
 
@@ -44,7 +45,7 @@ USAGE
   $ deux controller NAME
 ```
 
-_See code: [src/commands/controller.js](https://github.com/dmdboi/deux/blob/v1.3.1/src/commands/controller.js)_
+_See code: [src/commands/controller.js](https://github.com/dmdboi/deux/blob/v1.5.0/src/commands/controller.js)_
 
 ## `deux help [COMMAND]`
 
@@ -72,7 +73,7 @@ USAGE
   $ deux model NAME
 ```
 
-_See code: [src/commands/model.js](https://github.com/dmdboi/deux/blob/v1.3.1/src/commands/model.js)_
+_See code: [src/commands/model.js](https://github.com/dmdboi/deux/blob/v1.5.0/src/commands/model.js)_
 
 ## `deux routes NAME`
 
@@ -83,7 +84,7 @@ USAGE
   $ deux routes NAME
 ```
 
-_See code: [src/commands/routes.js](https://github.com/dmdboi/deux/blob/v1.3.1/src/commands/routes.js)_
+_See code: [src/commands/routes.js](https://github.com/dmdboi/deux/blob/v1.5.0/src/commands/routes.js)_
 
 ## `deux service NAME`
 
@@ -94,7 +95,7 @@ USAGE
   $ deux service NAME
 ```
 
-_See code: [src/commands/service.js](https://github.com/dmdboi/deux/blob/v1.3.1/src/commands/service.js)_
+_See code: [src/commands/service.js](https://github.com/dmdboi/deux/blob/v1.5.0/src/commands/service.js)_
 
 ## `deux template NAME DIR`
 
@@ -105,5 +106,16 @@ USAGE
   $ deux template NAME DIR
 ```
 
-_See code: [src/commands/template.js](https://github.com/dmdboi/deux/blob/v1.3.1/src/commands/template.js)_
+_See code: [src/commands/template.js](https://github.com/dmdboi/deux/blob/v1.5.0/src/commands/template.js)_
+
+## `deux uuid`
+
+Generates a v4 UUID
+
+```
+USAGE
+  $ deux uuid
+```
+
+_See code: [src/commands/uuid.js](https://github.com/dmdboi/deux/blob/v1.5.0/src/commands/uuid.js)_
 <!-- commandsstop -->
